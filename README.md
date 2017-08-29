@@ -12,4 +12,4 @@ This provides a reasonable server platform that mimics two authentication scheme
 - Complexity is reduced by creating a Bearer token at login and passing it back to the client
 - Client must set Authorization: Bearer <token> in order to access the API resources
 
-
+TODO: timout the sessions.
