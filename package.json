@@ -4,6 +4,7 @@
   "description": "NodeJS + Express with basic authentication. Designed to host one statically served site and one RESTful site. The REST implementation for mocked backends uses json-server.",
   "main": "./server/index.js",
   "scripts": {
+    "start": "node ./server/index.js",
     "test": "test"
   },
   "repository": {
@@ -21,5 +22,16 @@
   "bugs": {
     "url": "https://github.com/randycasburn/base_express_server/issues"
   },
-  "homepage": "https://github.com/randycasburn/base_express_server#readme"
+  "homepage": "https://github.com/randycasburn/base_express_server#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-bearer-token": "^2.1.0",
+    "express-jwt": "^5.3.0",
+    "express-session": "^1.15.5",
+    "jsonwebtoken": "^7.4.3",
+    "lowdb": "^0.17.2",
+    "path": "^0.12.7",
+    "pbkdf2-password": "^1.2.1"
+  }
 }
