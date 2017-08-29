@@ -58,3 +58,4 @@ typings/
 .env
 
 server/auth/db.json
+.vscode
