@@ -1,0 +1,25 @@
+{
+  "name": "base_express_server",
+  "version": "1.0.0",
+  "description": "NodeJS + Express with basic authentication. Designed to host one statically served site and one RESTful site. The REST implementation for mocked backends uses json-server.",
+  "main": "./server/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randycasburn/base_express_server.git"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "node",
+    "webservice"
+  ],
+  "author": "Randy Casburn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/randycasburn/base_express_server/issues"
+  },
+  "homepage": "https://github.com/randycasburn/base_express_server#readme"
+}
