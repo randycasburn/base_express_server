@@ -4,8 +4,7 @@
   "description": "NodeJS + Express with basic authentication. Designed to host one statically served site and one RESTful site. The REST implementation for mocked backends uses json-server.",
   "main": "./server/index.js",
   "scripts": {
-    "prestart": "node startup.js",
-    "start": "node ./server/index.js"
+    "start": "node startup.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +36,7 @@
     "pbkdf2-password": "^1.2.1"
   },
   "devDependencies": {
+    "ascii-progress": "^1.0.5",
     "connect-inject": "^0.4.0",
     "livereload": "^0.6.2",
     "open": "0.0.5"

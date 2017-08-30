@@ -61,11 +61,16 @@ app.use(function (req, res) {
 const open = require('open');
 /* istanbul ignore next */
 app.listen(3000, () => {
-    open('http://localhost:3000', function(e){console.log(e)});
-  console.log('JSON Server is running on port 3000');
-})
+    open('http://localhost:3000');
+    console.log('JSON Server is running on port 3000');
+});
+// Need two watchers for all this. 
+// 1.ng watching the src dir and recompiling on change and placing in dist
+//   - This listener is set up in the startup.js script
+// 2.livereload watching the dist folder and refreshing the browser
 var lrserver = livereload.createServer(null,  () => {
     console.log("Watching files at " + path.join(__dirname, "../client/dist"));
 });
+// watch the dist folder for changes
 lrserver.watch(path.join(__dirname, "../client/dist"));
 

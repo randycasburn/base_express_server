@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Debug Startup.js",
+            "program": "${workspaceRoot}/startup.js"
+        },
+            {
+            "type": "node",
+            "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceRoot}/server/index.js"
         }
