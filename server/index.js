@@ -6,9 +6,11 @@ const session = require('express-session');
 const unprotectedRoutes = require('./unprotected.routes');
 const sessionRoutes = require('./session.routes');
 const tokenRoutes = require('./token.routes');
+const helmet = require('helmet');
 const app = module.exports = express();
 
 // middleware
+app.use(helmet());
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.text()); // for parsing text
 app.use(bodyParser.urlencoded({extended: true})); // for parsing application/x-www-form-urlencoded
@@ -19,6 +21,7 @@ app.use(session({
     saveUninitialized: false, // don't create session until something stored
     secret: 'asdf!%ARYW%YW$@$%T#W5234526tq35ARGTr46wu7'
 }));
+app.disable('x-powered-by');
 /*
  Routing is designed to support Single Page Applications. 
  That means only the '/' route actually returns HTML to the browser.
